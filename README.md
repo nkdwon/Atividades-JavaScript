@@ -11,3 +11,10 @@ Apenas algumas atividades de JavaScript que realizei durante o estudo e prática
 Todas as questões realizadas completamente em JavaScript.
 
 ##
+
+> ### Conhecimento trabalhado 📚 
+
+- Arrays
+- Objects
+- Functions 
+- Methods
