@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 10</title>
+</head>
+<body>
+  <script>
+    var arrayMisto = [], x = 0, cont = 0, arrayNeg =[]
+    while(x<=2){
+    arrayMisto[x] = parseFloat(prompt("Digite um número:"))
+    x++;
+    }
+
+
+  for( i = 0; i < arrayMisto.length; i++){
+
+    if( arrayMisto[i] < 0){
+      
+      arrayNeg[i] = arrayMisto[i]
+      cont++
+    }
+  } 
+  console.log(cont)
+  console.log(`Os números negativos são ${arrayNeg}`)
+  
+  </script>
+</body>
+</html>

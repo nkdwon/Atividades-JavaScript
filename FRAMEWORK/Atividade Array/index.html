@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+        var arrayArco_Iris = ["Vemelho", "Laranja", "Marrom", "Azul"];
+
+        function ArcoIris(){
+        arrayArco_Iris.splice(2,2);
+        arrayArco_Iris.splice(4,1,"Amarelo","Verde","Azul","Roxo");    
+
+        console.log(`A ordem das cores do Arco Íris é ${arrayArco_Iris}`)
+        }
+        ArcoIris(arrayArco_Iris);
+
+        function Endereco(){
+            var objetoEndereco = {
+                rua : "Rua Itajubá" ,
+                número : 230,
+                bairro : "Bairro Floresta",
+                cidade : "Belo Horizonte",
+                uf : "MG"        
+            };
+           return(objetoEndereco)
+        }
+     let end= Endereco();
+     console.log(` A rua deste usuário é: ${end.rua} número ${end.número}, no bairro ${end.bairro} da cidade de ${end.cidade} ${end.uf}`)
+
+
+
+     function temHabilidade(habilidade)
+    {
+        let indice = habilidade.indexOf("Javascript",0)
+        if(indice>=0 ){
+            return(true)
+
+        } 
+        else {
+            return(false)
+        }
+
+    }
+    var habilidade = ["Javascript","ReactJS", "React Native" , "Angular"];
+    console.log(temHabilidade(habilidade)); 
+
+
+        function exeperiencia(anos){
+            switch(anos){
+                case 1:
+                anos <= 1
+                return "Iniciante"
+                case 2:
+                anos > 1 && anos <= 3
+                return "Intermediário"
+                case 3:
+                anos => 4 && anos <=6
+                return "Avançado"
+                default:
+                anos > 7
+                return "Mestre Jedi"
+            }
+        }
+
+            var usuarios = [{
+            nome: "Gabriel",
+            habilidades: ["JavaScript", "ReactJS", "Redux"]
+
+        },
+        {
+            nome: "Lara",
+            habilidades: ["JAVA", "PHP", "Laravel"]
+
+        }];
+    
+            for (let user of usuarios){
+                console.log("O usuario " + user.nome + "possui as habilidades: " + user.habilidades.join(' - '))
+            }
+
+            const objeto = [
+            {
+                nome: "Isabela",
+                idade: 19,
+                rg:123456
+            },
+            {
+                nome: "Lucas",
+                idade: 7,
+                rg:123456
+            },
+            {
+                nome: "Marcus",
+                idade: 57,
+                rg:123456
+            },
+            {
+                nome: "Janaina",
+                idade: 17,
+                rg:123456
+            },
+            {
+                nome: "Gabriel",
+                idade: 21,
+                rg:123456
+            },
+            {
+                nome: "Larissa",
+                idade: 20,
+                rg:123456
+            },
+            {
+                nome: "Leticia",
+                idade: 16,
+                rg:123456
+            },
+            {
+                nome: "João",
+                idade: 78,
+                rg:123456
+            },
+            {
+                nome: "Artur",
+                idade: 15,
+                rg:123456
+            },
+            {
+                nome: "Marcello",
+                idade: 25,
+                rg:123456
+            }
+        ]
+
+
+        let idade18Anos = objeto.filter(numero => numero.idade >= 18)
+        console.log(idade18Anos)
+
+
+    </script>
+
+</body>
+</html>

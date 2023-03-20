@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 8</title>
+  </head>
+  <body>
+    <script>
+      const funcionarios = [{
+        Nome: "Han Solo",
+        Departamento: "Financeiro",
+        Salario: 5000
+        }, {
+        Nome: "Luke",
+        Departamento: "Financeiro",
+        Salario: 15000
+        }, {
+        Nome: "Ben",
+        Departamento: "Marketing",
+        Salario: 2000
+        }, {
+        Nome: "Leia",
+        Departamento: "Marketing",
+        Salario: 10000
+        }, {
+        Nome: "Rey",
+        Departamento: "Financeiro",
+        Salario: 2500
+        }]
+
+        var depFinanceiro = funcionarios.filter( funcionarios => funcionarios.Departamento == "Financeiro").map(funcionarios => funcionarios.Salario + funcionarios.Salario * 0.50).reduce((funcionarios,depFinanceiro) => (funcionarios+= funcionarios))
+        
+        console.log(depFinanceiro)
+       
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite seu nome completo: ")
+        let quantidade = parseInt(prompt("Qual a quantidade de produtos que vc quer adquirir: "))
+        const produto = 1.99;
+        let desconto;
+        let valor;
+        let total;
+
+
+         if(quantidade == "" || isNaN(quantidade)){
+            alert("Insira a quantidade de produtos que vai comprar!!!")            
+        }
+        else if( quantidade < 11){
+            desconto = 0;
+            valor = ((quantidade * produto) * 0);
+            total = ((quantidade * produto) - valor); 
+            alert(`Caro senhor(a) ${nome}, devido a quantidade de produtos que você adquiriu(${quantidade}), não será aplicado nenhum desconto. O valor total de sua compra é de R$${total}0.`);
+        }
+        else if( quantidade > 10 && quantidade < 26){
+            desconto = 0.05;
+            valor = ((quantidade * produto) * 0.05);
+            total = Math.round((quantidade * produto) - valor); 
+            alert(`Caro senhor(a) ${nome}, devido a quantidade de produtos que você adquiriu(${quantidade}), será aplicado um desconto de 5%(${valor}). O valor total de sua compra é de R$${total}.00.`)
+        }
+        else{
+            desconto = 0.08;
+            valor = ((quantidade * produto) * 0.08);
+            total = Math.round((quantidade * produto) - valor); 
+            alert(`Caro senhor(a) ${nome}, devido a quantidade de produtos que você adquiriu(${quantidade}), será aplicado um desconto de 8%(${valor}). O valor total de sua compra é de R$${total}.00.`)
+        }    
+
+    </script>
+</body>
+</html>

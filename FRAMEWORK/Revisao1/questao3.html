@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercício Revisão</title>
+  </head>
+  <body>
+    <p>Questão 3</p>
+    <script>
+    
+      let valor = parseFloat(prompt("Digite o valor à vista do produto:"));
+      let parcelar = parseInt(prompt("O parcelamento séra de 3x ou 5x?"));
+      let total;
+      if((parcelar != 3) && (parcelar != 5)) {
+        alert("Escolha parcelar de 3 ou 5 vezes!!");
+      }
+      else if(parcelar == 3) {
+        total = ((valor/3) * 0.10) + valor;
+        alert("O valor a se pagar será de: R$ " +  total)
+      }
+    
+    
+    
+    </script>
+</body>
+</html>
