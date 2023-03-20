@@ -8,7 +8,7 @@ Apenas algumas atividades de JavaScript que realizei durante o estudo e prática
 
 > ### Tecnologia ulizada 💻
 
-Todas as questões realizadas completamente em JavaScript.
+Todas as questões realizadas em JavaScript, porém dentro de extensão .html.
 
 ##
 
